@@ -11,7 +11,7 @@ class AllRecipeProvider extends GetConnect {
 
   Future<List<dynamic>> getUser() async{
     // final response = await get('http://05d9-103-112-206-10.ngrok.io/api/get/recipe');
-    final response = await get('http://172.16.154.8:8000/api/get/recipe');
+    final response = await get('http://172.16.154.20:8000/api/get/recipe');
     if(response.status.hasError){
       return Future.error(response.statusText!);
     } else {
